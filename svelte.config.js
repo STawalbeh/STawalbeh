@@ -12,7 +12,6 @@ const config = {
 		vitePreprocess(),
         mdsvex({
             extensions: ['.md', '.svx'],
-			layout: "./src/blog.svelte",
 			rehypePlugins: [rehypeKatexSvelte],
 			remarkPlugins: [remarkMath]
         })
