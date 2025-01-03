@@ -30,6 +30,22 @@
                 <span class="icon"><i class="fab fa-github"></i> </span>
                 <span> <a href="https://github.com/STawalbeh"> GitHub </a> </span>
             </div>
+
+            <div class="block">
+                <span class="icon"><i class="fab fa-scholar.google"></i> </span>
+                <span> <a href="https://scholar.google.com/citations?user=p6PVOMEAAAAJ&hl=en"> Google Scholar </a> </span>
+            </div>
+
+            <div class="block">
+                <span class="icon"><i class="fab fa-orcid"></i> </span>
+                <span> <a href="https://orcid.org/0000-0001-6278-0768"> ORCID </a> </span>
+            </div>
+
+            <div class="block">
+                <span class="icon"><i class="fab fa-researchgate"></i> </span>
+                <span> <a href="https://www.researchgate.net/profile/Saja-Tawalbeh"> Research Gate </a> </span>
+            </div>
+
         </div>
     </div>
     <div class="column">
