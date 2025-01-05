@@ -2,5 +2,9 @@
 	"/": [
 		"src/routes/+layout.js",
 		"src/routes/+layout.js"
+	],
+	"/research": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
 	]
 }

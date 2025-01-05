@@ -19,6 +19,13 @@
       "_ssr.js"
     ]
   },
+  "_navbar.js": {
+    "file": "chunks/navbar.js",
+    "name": "navbar",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
   "_ssr.js": {
     "file": "chunks/ssr.js",
     "name": "ssr"
@@ -63,6 +70,26 @@
     "file": "entries/pages/_page.svelte.js",
     "name": "entries/pages/_page.svelte",
     "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_navbar.js"
+    ]
+  },
+  "src/routes/research/+layout.svelte": {
+    "file": "entries/pages/research/_layout.svelte.js",
+    "name": "entries/pages/research/_layout.svelte",
+    "src": "src/routes/research/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_navbar.js"
+    ]
+  },
+  "src/routes/research/+page.svelte": {
+    "file": "entries/pages/research/_page.svelte.js",
+    "name": "entries/pages/research/_page.svelte",
+    "src": "src/routes/research/+page.svelte",
     "isEntry": true,
     "imports": [
       "_ssr.js"
