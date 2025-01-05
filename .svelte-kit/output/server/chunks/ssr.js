@@ -27,8 +27,7 @@ function set_current_component(component) {
   current_component = component;
 }
 function get_current_component() {
-  if (!current_component)
-    throw new Error("Function called outside component initialization");
+  if (!current_component) throw new Error("Function called outside component initialization");
   return current_component;
 }
 function setContext(key, context) {
@@ -38,10 +37,7 @@ function setContext(key, context) {
 function getContext(key) {
   return get_current_component().$$.context.get(key);
 }
-function ensure_array_like(array_like_or_iterator) {
-  return array_like_or_iterator?.length !== void 0 ? array_like_or_iterator : Array.from(array_like_or_iterator);
-}
-const ATTR_REGEX = /[&"]/g;
+const ATTR_REGEX = /[&"<]/g;
 const CONTENT_REGEX = /[&<]/g;
 function escape(value, is_attr = false) {
   const str = String(value);
@@ -57,21 +53,12 @@ function escape(value, is_attr = false) {
   }
   return escaped + str.substring(last);
 }
-function each(items, fn) {
-  items = ensure_array_like(items);
-  let str = "";
-  for (let i = 0; i < items.length; i += 1) {
-    str += fn(items[i], i);
-  }
-  return str;
-}
 const missing_component = {
   $$render: () => ""
 };
 function validate_component(component, name) {
   if (!component || !component.$$render) {
-    if (name === "svelte:component")
-      name += " this={...}";
+    if (name === "svelte:component") name += " this={...}";
     throw new Error(
       `<${name}> is not a valid SSR component. You may need to review your build config to ensure that dependencies are compiled, rather than imported as pre-compiled modules. Otherwise you may need to fix a <${name}>.`
     );
@@ -116,8 +103,7 @@ function create_ssr_component(fn) {
   };
 }
 function add_attribute(name, value, boolean) {
-  if (value == null || boolean)
-    return "";
+  if (value == null || boolean) return "";
   const assignment = `="${escape(value, true)}"`;
   return ` ${name}${assignment}`;
 }
@@ -127,7 +113,6 @@ export {
   create_ssr_component as c,
   add_attribute as d,
   escape as e,
-  each as f,
   getContext as g,
   missing_component as m,
   noop as n,

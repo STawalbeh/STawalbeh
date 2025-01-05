@@ -30,17 +30,7 @@
                 <span class="icon"><i class="fab fa-linkedin"></i> </span>
                 <span> <a href="https://www.linkedin.com/in/saja-tawalbeh-b744a1151/"> LinkedIn </a> </span>
             </div>
-            <script lang="ts">
-    const papers = [
-        {
-            "title": "Towards the Characterization of Representations Learned via Capsule-based Network Architectures",
-            "date": "Nov 2024"
-        }
-    ]
-</script>
-
-<section>
-…</section>
+            
             <div class="block">
                 <span class="icon"><i class="fab fa-github"></i> </span>
                 <span> <a href="https://github.com/STawalbeh"> GitHub </a> </span>
