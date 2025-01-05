@@ -94,5 +94,62 @@
     "imports": [
       "_ssr.js"
     ]
+  },
+  "src/routes/service/+layout.svelte": {
+    "file": "entries/pages/service/_layout.svelte.js",
+    "name": "entries/pages/service/_layout.svelte",
+    "src": "src/routes/service/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_navbar.js"
+    ]
+  },
+  "src/routes/service/+page.svelte": {
+    "file": "entries/pages/service/_page.svelte.js",
+    "name": "entries/pages/service/_page.svelte",
+    "src": "src/routes/service/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "src/routes/talks/+layout.svelte": {
+    "file": "entries/pages/talks/_layout.svelte.js",
+    "name": "entries/pages/talks/_layout.svelte",
+    "src": "src/routes/talks/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_navbar.js"
+    ]
+  },
+  "src/routes/talks/+page.svelte": {
+    "file": "entries/pages/talks/_page.svelte.js",
+    "name": "entries/pages/talks/_page.svelte",
+    "src": "src/routes/talks/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "src/routes/teaching/+layout.svelte": {
+    "file": "entries/pages/teaching/_layout.svelte.js",
+    "name": "entries/pages/teaching/_layout.svelte",
+    "src": "src/routes/teaching/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_navbar.js"
+    ]
+  },
+  "src/routes/teaching/+page.svelte": {
+    "file": "entries/pages/teaching/_page.svelte.js",
+    "name": "entries/pages/teaching/_page.svelte",
+    "src": "src/routes/teaching/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
   }
 }

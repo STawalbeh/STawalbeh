@@ -10,27 +10,54 @@ return {
 	assets: new Set(["favicon.png","profile.jpg","readME","styles.css"]),
 	mimeTypes: {".png":"image/png",".jpg":"image/jpeg",".css":"text/css"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.CJSebPGO.js","app":"_app/immutable/entry/app.CJe7OazX.js","imports":["_app/immutable/entry/start.CJSebPGO.js","_app/immutable/chunks/entry.B7yLesum.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.CJe7OazX.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.CFe7QnyN.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.DjE2rQxW.js","app":"_app/immutable/entry/app.XddVS7gV.js","imports":["_app/immutable/entry/start.DjE2rQxW.js","_app/immutable/chunks/entry.BdyiGke-.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.XddVS7gV.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.CFe7QnyN.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
 			__memo(() => import('./nodes/2.js')),
 			__memo(() => import('./nodes/3.js')),
-			__memo(() => import('./nodes/4.js'))
+			__memo(() => import('./nodes/4.js')),
+			__memo(() => import('./nodes/5.js')),
+			__memo(() => import('./nodes/6.js')),
+			__memo(() => import('./nodes/7.js')),
+			__memo(() => import('./nodes/8.js')),
+			__memo(() => import('./nodes/9.js')),
+			__memo(() => import('./nodes/10.js'))
 		],
 		routes: [
 			{
 				id: "/",
 				pattern: /^\/$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 3 },
+				page: { layouts: [0,], errors: [1,], leaf: 6 },
 				endpoint: null
 			},
 			{
 				id: "/research",
 				pattern: /^\/research\/?$/,
 				params: [],
-				page: { layouts: [0,2,], errors: [1,,], leaf: 4 },
+				page: { layouts: [0,2,], errors: [1,,], leaf: 7 },
+				endpoint: null
+			},
+			{
+				id: "/service",
+				pattern: /^\/service\/?$/,
+				params: [],
+				page: { layouts: [0,3,], errors: [1,,], leaf: 8 },
+				endpoint: null
+			},
+			{
+				id: "/talks",
+				pattern: /^\/talks\/?$/,
+				params: [],
+				page: { layouts: [0,4,], errors: [1,,], leaf: 9 },
+				endpoint: null
+			},
+			{
+				id: "/teaching",
+				pattern: /^\/teaching\/?$/,
+				params: [],
+				page: { layouts: [0,5,], errors: [1,,], leaf: 10 },
 				endpoint: null
 			}
 		],
