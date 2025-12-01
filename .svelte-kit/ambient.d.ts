@@ -37,6 +37,7 @@ declare module '$env/static/private' {
 	export const NVS_ROOT: string;
 	export const GIT_EDITOR: string;
 	export const RVM_PATH: string;
+	export const FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION: string;
 	export const HOSTNAME: string;
 	export const GIT_ASKPASS: string;
 	export const PIPX_HOME: string;
@@ -70,6 +71,7 @@ declare module '$env/static/private' {
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
 	export const GOROOT: string;
+	export const VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
 	export const NODE_ROOT: string;
 	export const COLORTERM: string;
 	export const GITHUB_USER: string;
@@ -77,6 +79,8 @@ declare module '$env/static/private' {
 	export const COLOR: string;
 	export const PYTHON_PATH: string;
 	export const NVM_DIR: string;
+	export const DEBUGINFOD_URLS: string;
+	export const npm_config_metrics_registry: string;
 	export const DOTNET_SKIP_FIRST_TIME_EXPERIENCE: string;
 	export const ContainerVersion: string;
 	export const GITHUB_API_URL: string;
@@ -101,6 +105,7 @@ declare module '$env/static/private' {
 	export const SDKMAN_CANDIDATES_DIR: string;
 	export const NODE: string;
 	export const npm_package_name: string;
+	export const SDKMAN_BROKER_API: string;
 	export const NPM_GLOBAL: string;
 	export const HUGO_DIR: string;
 	export const SHELL_LOGGED_IN: string;
@@ -194,6 +199,7 @@ declare module '$env/dynamic/private' {
 		NVS_ROOT: string;
 		GIT_EDITOR: string;
 		RVM_PATH: string;
+		FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION: string;
 		HOSTNAME: string;
 		GIT_ASKPASS: string;
 		PIPX_HOME: string;
@@ -227,6 +233,7 @@ declare module '$env/dynamic/private' {
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
 		GOROOT: string;
+		VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
 		NODE_ROOT: string;
 		COLORTERM: string;
 		GITHUB_USER: string;
@@ -234,6 +241,8 @@ declare module '$env/dynamic/private' {
 		COLOR: string;
 		PYTHON_PATH: string;
 		NVM_DIR: string;
+		DEBUGINFOD_URLS: string;
+		npm_config_metrics_registry: string;
 		DOTNET_SKIP_FIRST_TIME_EXPERIENCE: string;
 		ContainerVersion: string;
 		GITHUB_API_URL: string;
@@ -258,6 +267,7 @@ declare module '$env/dynamic/private' {
 		SDKMAN_CANDIDATES_DIR: string;
 		NODE: string;
 		npm_package_name: string;
+		SDKMAN_BROKER_API: string;
 		NPM_GLOBAL: string;
 		HUGO_DIR: string;
 		SHELL_LOGGED_IN: string;

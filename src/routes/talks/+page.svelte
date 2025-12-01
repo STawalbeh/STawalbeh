@@ -1,4 +1,114 @@
-
 <section>
     <h1 class="title">Talks</h1>
+
+    <div class="content">
+        <ul style="list-style: none; padding: 0;">
+
+            
+            <!-- 2025 Talks -->
+            <li>
+                <a href="https://events.teams.microsoft.com/event/0e1ccef1-fae3-4ea4-a1c6-e8771b7cad3e@a72d5a72-25ee-40f0-9bd1-067cb5b770d4" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Webinar @ VAIA - Self-Supervised Learning: Training AI Models with Less Labels</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2025 - Flanders AI EDIH</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://events.teams.microsoft.com/event/c5a675b4-3d13-474d-b1f9-484d6d720e08@a72d5a72-25ee-40f0-9bd1-067cb5b770d4" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Webinar @ VAIA - From Experience to Expertise: An Introduction to Transfer Learning</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2025 - Flanders AI EDIH</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+
+            <!-- 2024 Talks -->
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Explainable Artificial Intelligence</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2024 - BeCode</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #e8f0fe; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Analyzing Representations Learned via Capsule Neural Networks</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2024 - Women in Data Science (WiDS) - Belgium conference</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <!-- 2023 Talks -->
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Analyzing the Explanation and Interpretation Potential of Matrix Capsule Networks</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2023 - ECML-PKDD</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #e8f0fe; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Explainable Artificial Intelligence</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2023 - The Think Work podcast</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Explainable AI, PhD Research</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2023 - The Women in Tech Summer Gathering-Clusity</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <!-- 2020 Talks -->
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #e8f0fe; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Transfer Learning for Aggressive Identification with XGBoost</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2020 - LRC</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <!-- 2019 Talks -->
+            <li>
+                <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="box" style="background-color: #f0f4f8; margin-bottom: 1em; border-radius: 8px; padding: 1em; cursor: pointer; transition: background-color 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div>Recent Advances in Affect Detection from Arabic Text</div>
+                            <div style="color: #6b7280; font-size: 0.95em;"><strong>2019 - SNAMS</strong></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </section>
