@@ -1,15 +1,26 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
-import profilePic from '../assets/saja.png'; // <-- Add your profile picture here
+import profilePic from '../assets/saja.png';
 ---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <div id="container">
   <img id="background" src={background.src} alt="" fetchpriority="high" />
 
-  <!-- Website name at the top -->
+  <!-- Website name at the top with buttons -->
   <header id="site-header">
+    <div>
+      <a class="btn" href="./publications">Research Papers</a>
+      <a class="btn" href='./talks'">Talks</a>
+    </div>
+
     <h1>STawalbeh</h1>
+
+    <div >
+      <a class="btn" href='./service'">Service</a>
+      <a class="btn" href='./teaching'">Teaching</a>
+    </div>
   </header>
 
   <div class="content-wrapper">
@@ -18,35 +29,68 @@ import profilePic from '../assets/saja.png'; // <-- Add your profile picture her
       <img src={profilePic.src} alt="Saja Tawalbeh" class="profile-pic" />
       <p class="name">Saja Tawalbeh</p>
       <p class="job">PhD Researcher</p>
+      <p class="job-description">Explainable XAI</p>
+        <hr class="job-separator" />
+
+      <div class="social-links">
+        <div class="social-item">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <a href="mailto:sajatawalbeh91@gmail.com">Email</a>
+        </div>
+
+        <div class="social-item">
+          <span class="icon"><i class="fab fa-linkedin"></i></span>
+          <a href="https://www.linkedin.com/in/saja-tawalbeh-b744a1151/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="social-item">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <a href="https://github.com/STawalbeh" target="_blank">GitHub</a>
+        </div>
+
+        <div class="social-item">
+          <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+          <a href="https://scholar.google.com/citations?user=p6PVOMEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+
+        <div class="social-item">
+          <span class="icon"><i class="fab fa-orcid"></i></span>
+          <a href="https://orcid.org/0000-0001-6278-0768" target="_blank">ORCID</a>
+        </div>
+
+        <div class="social-item">
+          <span class="icon"><i class="fab fa-researchgate"></i></span>
+          <a href="https://www.researchgate.net/profile/Saja-Tawalbeh" target="_blank">ResearchGate</a>
+        </div>
+      </div>
     </aside>
 
-<hr class="soft-line" />
+    <hr class="soft-line" />
 
     <!-- Main content -->
     <main>
       <section id="hero">
         <p class="here">
           My name is Saja Tawalbeh. I received my bachelor’s in computer science in Jordan. Then, I completed my master’s in AI, specifically in natural language processing, and worked as a research assistant in the same area for two years at Jordan University of Science and Technology.
-		  I'm currently a senior research fellow and pursuing my Ph.D. in Explainable Artificial Intelligence (XAI) at the Faculty of Science, University of Antwerp, sqIRL/IDLab, imec, Antwerp, Belgium.
-                    Additionally, she was a lecturer in the Department of Applied Computer Science at Karel de Grote University of Applied Sciences, Antwerp, Belgium.
+          I'm currently a senior research fellow and pursuing my Ph.D. in Explainable Artificial Intelligence (XAI) at the Faculty of Science, University of Antwerp, sqIRL/IDLab, imec, Antwerp, Belgium.
+          Additionally, she was a lecturer in the Department of Applied Computer Science at Karel de Grote University of Applied Sciences, Antwerp, Belgium.
         </p>
 
-
-		<p class="here">
+        <p class="here">
           My research interests include NLP, computer vision, and XAI, with a focus on Capsule Networks, Convolutional Neural Networks, and text-based analysis.
         </p>
 
-		<p class="here">
+        <p class="here">
           I’m passionate about photography, playing chess, and exploring new places on long walks, which helps me feel more connected to the world around me. 
-                        Walking also proves to be an excellent way to brainstorm new ideas or troubleshoot research-related challenges
+          Walking also proves to be an excellent way to brainstorm new ideas or troubleshoot research-related challenges
         </p>
-
       </section>
     </main>
   </div>
 </div>
 
 <style>
+/* Background */
 #background {
   position: fixed;
   top: 0;
@@ -58,7 +102,7 @@ import profilePic from '../assets/saja.png'; // <-- Add your profile picture her
   object-fit: cover;
 }
 
-
+/* Container */
 #container {
   font-family: Inter, Roboto, 'Helvetica Neue', Arial, sans-serif;
   min-height: 100vh;
@@ -66,13 +110,55 @@ import profilePic from '../assets/saja.png'; // <-- Add your profile picture her
   flex-direction: column;
 }
 
+/* Header with buttons */
 #site-header {
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 2rem;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  position: relative;
 }
 
+#site-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Buttons */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-buttons {
+  left: 2rem;
+}
+
+.right-buttons {
+  right: 2rem;
+}
+
+.header-buttons button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.header-buttons button:hover {
+  background-color: #3245ff;
+}
+
+/* Content wrapper */
 .content-wrapper {
   display: flex;
   flex: 1;
@@ -80,42 +166,73 @@ import profilePic from '../assets/saja.png'; // <-- Add your profile picture her
   gap: 2rem;
 }
 
+/* Sidebar */
 #sidebar {
   flex: 0 0 200px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* center the profile pic and text */
+  align-items: center;
   gap: 0.5rem;
-  margin-top: -5rem;  /* ↓ smaller value = closer to top, larger = lower */
+  margin-top: -5rem;
 }
 
 #sidebar .profile-pic {
   width: 120px;
   height: 120px;
-  border-radius: 50%; /* circular picture */
+  border-radius: 50%;
   object-fit: cover;
+  border: 2px solid #ccc;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
-  border: 2px solid #ccc; /* optional border */
-  margin-top: 1rem;  /* ↓ smaller value = closer to top, larger = lower */
-
-  
 }
 
 #sidebar .name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: -1rem;  /* ↓ smaller value = closer to top, larger = lower */
 }
 
 #sidebar .job {
   font-size: 1rem;
   color: #4b5563;
   text-align: center;
-  margin-top: -1.5rem;  /* ↓ smaller value = closer to top, larger = lower */
-  
 }
 
+/* Social links */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.social-item .icon {
+  color: #555;
+  font-size: 20px;
+  width: 30px;
+  text-align: left;
+}
+
+.social-item a {
+  text-decoration: none;
+  color: #0066cc;
+  transition: color 0.2s;
+}
+
+.social-item a:hover {
+  color: #3245ff;
+}
+
+/* Main content */
 main {
   flex: 1;
 }
@@ -123,81 +240,67 @@ main {
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centers vertically inside the section */
-  align-items: center; /* centers horizontally */
-  height: 100%; /* must have a height for vertical centering */
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  text-align: justify;      /* Makes text align left + right */
-  text-justify: inter-word; /* Makes spacing look cleaner */
-  /* Move paragraph higher (vertical position control) */
-  margin-top: -5rem;  /* ↓ smaller value = closer to top, larger = lower */
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: -2rem;
 }
-
-.middle-paragraph {
-  font-size: 1.1rem;
-  color: #111827;
-  line-height: 1.5;
-}
-
-.highlight-paragraph {
-  background-color: #dfd6dbff;
-  padding: 0.8rem 2rem;
-  border-radius: 50px;
-
-  /* Move paragraph higher (vertical position control) */
-  margin-top: -10rem;  /* ↓ smaller value = closer to top, larger = lower */
-
-  /* Width control */
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* Text control */
-  text-align: justify;      /* Makes text align left + right */
-  text-justify: inter-word; /* Makes spacing look cleaner */
-
-  font-size: 1.1rem;
-  color: #111827;
-
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-
 @media screen and (max-width: 768px) {
+  #site-header {
+    flex-direction: column;
+  }
+  .header-buttons {
+    position: static;
+    transform: none;
+    margin-bottom: 0.5rem;
+  }
   .content-wrapper {
     flex-direction: column;
   }
-
   #sidebar {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
   }
-
   #sidebar .profile-pic {
     width: 80px;
     height: 80px;
   }
-  
-.highlight-paragraph {
-  background-color: #f0f4f8; /* light button-like background */
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  max-width: 600px; /* control width */
-  margin: 1.5rem auto; /* centers horizontally and adds spacing */
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #3245ff;
+}
+.job-description {
+  font-size: 0.8rem;
+  color: #9397a0ff; /* light gray */
   text-align: center;
-  font-size: 1.1rem;
-  color: #111827;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* subtle elevation */
+  margin-top: -1rem;
 }
 
-@media screen and (max-width: 768px) {
-  .highlight-paragraph {
-    max-width: 90%; /* responsive width on mobile */
-    padding: 0.75rem 1rem;
- }
-
+.job-separator {
+  width: 120px;          /* length of the line */
+  border: 0;
+  border-top: 2px solid #d1d5db; /* light gray line */
+  margin: 0.9rem auto;  /* spacing above/below and center align */
 }
-
 </style>
+
