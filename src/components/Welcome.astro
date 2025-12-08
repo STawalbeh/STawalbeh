@@ -1,0 +1,203 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import profilePic from '../assets/saja.png'; // <-- Add your profile picture here
+---
+
+<div id="container">
+  <img id="background" src={background.src} alt="" fetchpriority="high" />
+
+  <!-- Website name at the top -->
+  <header id="site-header">
+    <h1>STawalbeh</h1>
+  </header>
+
+  <div class="content-wrapper">
+    <!-- Left sidebar -->
+    <aside id="sidebar">
+      <img src={profilePic.src} alt="Saja Tawalbeh" class="profile-pic" />
+      <p class="name">Saja Tawalbeh</p>
+      <p class="job">PhD Researcher</p>
+    </aside>
+
+<hr class="soft-line" />
+
+    <!-- Main content -->
+    <main>
+      <section id="hero">
+        <p class="here">
+          My name is Saja Tawalbeh. I received my bachelor’s in computer science in Jordan. Then, I completed my master’s in AI, specifically in natural language processing, and worked as a research assistant in the same area for two years at Jordan University of Science and Technology.
+		  I'm currently a senior research fellow and pursuing my Ph.D. in Explainable Artificial Intelligence (XAI) at the Faculty of Science, University of Antwerp, sqIRL/IDLab, imec, Antwerp, Belgium.
+                    Additionally, she was a lecturer in the Department of Applied Computer Science at Karel de Grote University of Applied Sciences, Antwerp, Belgium.
+        </p>
+
+
+		<p class="here">
+          My research interests include NLP, computer vision, and XAI, with a focus on Capsule Networks, Convolutional Neural Networks, and text-based analysis.
+        </p>
+
+		<p class="here">
+          I’m passionate about photography, playing chess, and exploring new places on long walks, which helps me feel more connected to the world around me. 
+                        Walking also proves to be an excellent way to brainstorm new ideas or troubleshoot research-related challenges
+        </p>
+
+      </section>
+    </main>
+  </div>
+</div>
+
+<style>
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(100px);
+  object-fit: cover;
+}
+
+
+#container {
+  font-family: Inter, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#site-header {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#sidebar {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the profile pic and text */
+  gap: 0.5rem;
+  margin-top: -5rem;  /* ↓ smaller value = closer to top, larger = lower */
+}
+
+#sidebar .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* circular picture */
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 2px solid #ccc; /* optional border */
+  margin-top: 1rem;  /* ↓ smaller value = closer to top, larger = lower */
+
+  
+}
+
+#sidebar .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -1rem;  /* ↓ smaller value = closer to top, larger = lower */
+}
+
+#sidebar .job {
+  font-size: 1rem;
+  color: #4b5563;
+  text-align: center;
+  margin-top: -1.5rem;  /* ↓ smaller value = closer to top, larger = lower */
+  
+}
+
+main {
+  flex: 1;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers vertically inside the section */
+  align-items: center; /* centers horizontally */
+  height: 100%; /* must have a height for vertical centering */
+  gap: 1rem;
+  text-align: justify;      /* Makes text align left + right */
+  text-justify: inter-word; /* Makes spacing look cleaner */
+  /* Move paragraph higher (vertical position control) */
+  margin-top: -5rem;  /* ↓ smaller value = closer to top, larger = lower */
+}
+
+.middle-paragraph {
+  font-size: 1.1rem;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.highlight-paragraph {
+  background-color: #dfd6dbff;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+
+  /* Move paragraph higher (vertical position control) */
+  margin-top: -10rem;  /* ↓ smaller value = closer to top, larger = lower */
+
+  /* Width control */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text control */
+  text-align: justify;      /* Makes text align left + right */
+  text-justify: inter-word; /* Makes spacing look cleaner */
+
+  font-size: 1.1rem;
+  color: #111827;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #sidebar .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  
+.highlight-paragraph {
+  background-color: #f0f4f8; /* light button-like background */
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  max-width: 600px; /* control width */
+  margin: 1.5rem auto; /* centers horizontally and adds spacing */
+  text-align: center;
+  font-size: 1.1rem;
+  color: #111827;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* subtle elevation */
+}
+
+@media screen and (max-width: 768px) {
+  .highlight-paragraph {
+    max-width: 90%; /* responsive width on mobile */
+    padding: 0.75rem 1rem;
+ }
+
+}
+
+</style>
